@@ -16,6 +16,8 @@ public class Form {
 	 * @param subject
 	 * @param description
 	 */
+	
+	//Constructor
 	public Form(String id, String name, String email, String category, String subject, String description) {
 		this.id = id;
 		this.name = name;
@@ -24,6 +26,8 @@ public class Form {
 		this.subject = subject;
 		this.description = description;
 	}
+	
+	//getters
 	public String getId() {
 		return id;
 	}

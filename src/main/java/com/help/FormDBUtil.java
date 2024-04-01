@@ -13,6 +13,8 @@ public class FormDBUtil {
 	private static Statement stmt = null;
 	private static ResultSet rs = null;
 	
+	
+	//search by mail validation part
 	public static boolean validate(String email) {
 		
 		try {
@@ -34,6 +36,8 @@ public class FormDBUtil {
 		return isSuccess;
 	}
 	
+	
+	//Get method
 	public static List<Form> getForm(String Email) {
 		
 		ArrayList<Form> form = new ArrayList<>();
@@ -71,7 +75,7 @@ public class FormDBUtil {
 	}
     
 	
-    
+    //Insert data from form
     public static boolean insertform(String name, String email, String category, String subject, String description) {
     	
     	boolean isSuccess = false;
@@ -96,8 +100,10 @@ public class FormDBUtil {
     	return isSuccess;
     }
     
+    //Update 
 	public static boolean updateform(String id, String name, String email, String category, String subject,
 			String description) {
+		
     	try {
     		
     		con = DBConnect.getConnection();
@@ -121,10 +127,9 @@ public class FormDBUtil {
     	return isSuccess;
 	}
     
+	//Get Updated Data
     public static List<Form> getFormDetails(String Email) {
-    	
-    	
-    	
+    		
     	ArrayList<Form> form = new ArrayList<>();
     	
     	try {
@@ -152,12 +157,10 @@ public class FormDBUtil {
     	}	
     	return form;	
     }
-    
-    
+        
+    //Delete
     public static boolean deleteform(String id) {
-    	
-    	
-    	
+    	 	
     	try {
     		
     		con = DBConnect.getConnection();
@@ -179,13 +182,6 @@ public class FormDBUtil {
     	
     	return isSuccess;
     }
-
-
-
-
-
-
-
 
 
 }
