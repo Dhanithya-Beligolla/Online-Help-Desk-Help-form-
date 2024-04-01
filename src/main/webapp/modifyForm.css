@@ -1,0 +1,110 @@
+@charset "ISO-8859-1";
+
+		body{
+			font-family: Hind SemiBold;
+			display: flex;
+    		justify-content: center;
+    		align-items: center;
+    		min-height: 100vh;
+			background: url('https://blog.happyfox.com/wp-content/uploads/2021/06/X_Tips_to_Improve_Your_IT_Service_Desk_-01.png') no-repeat;
+			background-size: cover;
+    		background-position: center;
+		}
+		.container {
+		    width: 80%;
+		    background: transparent;
+		    border: 2px solid rgba(255, 255, 255, .2);
+		    backdrop-filter: blur(8px);
+		    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+		    border-radius: 10px;   
+		    margin: 0 auto;
+		}
+		
+		.container h1 {
+		    font-size: 36px;
+		    text-align: center;
+		    color: black;
+		}
+		table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            text-color:black;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        input[type="text"]{
+		  display: block;
+		  width: 100%;
+		  padding: 10px;
+		  font-size: 16px;
+		  border: 1px solid #ccc;
+		  border-radius: 5px;
+		  box-sizing: border-box;
+		  background-color: #f5f5f5;
+		  color: #333;
+        }        
+        select{
+		  display: block;
+		  width: 100%;
+		  padding: 10px;
+		  font-size: 16px;
+		  border: 1px solid #ccc;
+		  border-radius: 5px;
+		  box-sizing: border-box;
+		  background-color: rgb(255, 255, 255);
+		  color: #333;
+        }
+		input[type="submit"] {
+		  display: block;
+		  padding: 10px;
+		  font-size: 16px;
+		  background-color: rgb(255, 255, 255);
+		  color: rgb(0, 0, 0);
+		  border: none;
+		  border-radius: 5px;
+		  cursor: pointer;
+		}
+		input[type="submit"]:hover {
+		  background-color: #136ca3;
+		}
+		input[type="select"] {
+		  display: block;
+		  padding: 10px;
+		  font-size: 16px;
+		  background-color: #e7eef0;
+		  color: rgb(0, 0, 0);
+		  border: none;
+		  border-radius: 5px;
+		  cursor: pointer;
+		}
+		button {
+		  display: block;
+		  padding: 10px;
+		  font-size: 16px;
+		  background-color: rgb(255, 255, 255);
+		  color: rgb(0, 0, 0);
+		  border: none;
+		  border-radius: 5px;
+		  cursor: pointer;
+		}
+		button:hover {
+		  background-color: #cc1f19c8;
+		}
+		.button,submit-container {
+			display: flex; 
+			justify-content: space-between; 
+			align-items: center; 
+		}
